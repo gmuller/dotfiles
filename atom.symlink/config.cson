@@ -14,14 +14,17 @@
       "vendor"
     ]
     themes: [
-      "atom-light-ui"
-      "atom-light-syntax"
+      "one-dark-ui"
+      "atom-dark-syntax"
     ]
     hideGitIgnoredFiles: true
     disabledPackages: [
       "background-tips"
       "exception-reporting"
       "metrics"
+      "ide-haskell"
+      "haskell-ghc-mod"
+      "autocomplete-haskell"
     ]
   "spell-check":
     grammars: [
