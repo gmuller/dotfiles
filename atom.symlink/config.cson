@@ -5,9 +5,17 @@
     showOnStartup: false
   core:
     projectHome: "/Users/gmuller/Documents/code"
+    themes: [
+      "atom-light-ui"
+      "atom-light-syntax"
+    ]
   editor:
     invisibles: {}
     softWrap: true
     softWrapAtPreferredLineLength: true
     preferredLineLength: 120
   tidal: {}
+  "tool-bar":
+    position: "Left"
+  "one-dark-ui": {}
+  "vim-mode": {}
