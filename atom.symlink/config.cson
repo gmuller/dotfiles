@@ -19,3 +19,6 @@
     position: "Left"
   "one-dark-ui": {}
   "vim-mode": {}
+".source.tidal":
+  editor:
+    preferredLineLength: 120
