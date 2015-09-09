@@ -13,8 +13,8 @@ for option in options:
     workouts.append(start)
 
 warmup_perc = [(0.4, 5), (0.5, 5), (0.6, 3)]
-week_one_perc = [(0.75, 5), (0.8, 5), (0.85, 5)]
-week_two_perc = [(0.80, 3), (0.85, 3), (0.90, 3)]
+week_one_perc = [(0.65, 5), (0.75, 5), (0.85, 5)]
+week_two_perc = [(0.70, 3), (0.80, 3), (0.90, 3)]
 week_three_perc = [(0.75, 5), (0.85, 3), (0.95, 1)]
 week_four_perc = [(0.6, 5), (0.65, 5), (0.70, 5)]
 
