@@ -19,6 +19,7 @@
     position: "Left"
   "one-dark-ui": {}
   "vim-mode": {}
+  "ever-notedown": {}
 ".source.tidal":
   editor:
     preferredLineLength: 120
