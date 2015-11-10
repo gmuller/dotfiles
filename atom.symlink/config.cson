@@ -6,8 +6,8 @@
   core:
     projectHome: "/Users/gmuller/Documents/code"
     themes: [
-      "atom-light-ui"
-      "atom-light-syntax"
+      "atom-dark-ui"
+      "atom-dark-syntax"
     ]
   editor:
     invisibles: {}

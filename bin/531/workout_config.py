@@ -1,15 +1,15 @@
 [grant]
 dips = 140
-squats = 255
-deadlift = 395
-bench = 235
-press = 170
+squats = 265
+deadlift = 405
+bench = 240
+press = 175
 pullups = 90
 
 [cary]
 dips = 30
-squats = 195
-deadlift = 205
-bench = 135
-press = 95
+squats = 205
+deadlift = 215
+bench = 140
+press = 100
 pullups = 5
