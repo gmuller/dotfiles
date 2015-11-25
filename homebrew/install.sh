@@ -11,9 +11,15 @@ then
   echo "  Installing Homebrew for you."
   ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 fi
+brew install cask
+brew tap caskroom/versions
+
+brew install Caskroom/cask/java
+brew cask install java7
+brew install homebrew/versions/maven30
 
 # Install homebrew packages
-brew install grc coreutils spark ghc cask cabal-install zsh libsndfile mongodb maven30 libsamplerate liblo jack nodejs sox
+brew install grc coreutils spark ghc cabal-install zsh libsndfile mongodb libsamplerate liblo jack nodejs sox
 
 brew install Caskroom/cask/anki
 brew install Caskroom/cask/atom
