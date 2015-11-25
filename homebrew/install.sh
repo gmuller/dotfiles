@@ -13,7 +13,7 @@ then
 fi
 
 # Install homebrew packages
-brew install grc coreutils spark brew-cask ghc cask cabal-install zsh libsndfile mongodb maven30 libsamplerate liblo jack
+brew install grc coreutils spark brew-cask ghc cask cabal-install zsh libsndfile mongodb maven30 libsamplerate liblo jack nodejs sox
 
 brew install Caskroom/cask/anki
 brew install Caskroom/cask/atom
@@ -25,5 +25,9 @@ brew install Caskroom/cask/libreoffice
 brew install Caskroom/cask/robomongo
 brew install Caskroom/cask/viscosity
 brew install Caskroom/cask/spotify
+brew install Caskroom/cask/vagrant
+brew install Caskroom/cask/vagrant-manager
+brew install Caskroom/cask/virtualbox
+brew install Caskroom/cask/anvil
 
 exit 0
