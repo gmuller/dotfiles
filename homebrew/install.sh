@@ -21,19 +21,20 @@ brew install homebrew/versions/maven30
 # Install homebrew packages
 brew install grc coreutils spark ghc cabal-install zsh libsndfile mongodb libsamplerate liblo jack nodejs sox
 
-brew install Caskroom/cask/anki
-brew install Caskroom/cask/atom
-brew install Caskroom/cask/eclipse-java
-brew install Caskroom/cask/evernote
-brew install Caskroom/cask/github-desktop
-brew install Caskroom/cask/iterm2
-brew install Caskroom/cask/libreoffice
-brew install Caskroom/cask/robomongo
-brew install Caskroom/cask/viscosity
-brew install Caskroom/cask/spotify
-brew install Caskroom/cask/vagrant
-brew install Caskroom/cask/vagrant-manager
-brew install Caskroom/cask/virtualbox
-brew install Caskroom/cask/anvil
+brew cask install anki
+brew cask install atom
+brew cask install eclipse-java
+brew cask install evernote
+brew cask install github-desktop
+brew cask install iterm2
+brew cask install libreoffice
+brew cask install robomongo
+brew cask install viscosity
+brew cask install spotify
+brew cask install vagrant
+brew cask install vagrant-manager
+brew cask install virtualbox
+brew cask install anvil
+brew cask install flux
 
 exit 0
