@@ -1,8 +1,8 @@
 [grant]
-squats = 285
-deadlift = 425
-bench = 250
-press = 175
+squats = 255
+deadlift = 335
+bench = 205
+press = 140
 
 [cary]
 squats = 205

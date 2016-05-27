@@ -38,5 +38,6 @@ brew cask install anvil
 brew cask install openemu
 brew cask install obs
 brew cask install steam
+brew cask install flux
 
 exit 0
