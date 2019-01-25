@@ -4,13 +4,52 @@
 #
 # `dot` handles installation, updates, things like that. Run it periodically
 # to make sure you're on the latest and greatest.
-export ZSH=$HOME/.dotfiles
 
-# Set OS X defaults
-$ZSH/osx/set-defaults.sh
+set -e
+
+parentDirectory="$(cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd -P)"
+dotfilesDirectory="$(cd "$( dirname "$parentDirectory" )" && pwd -P)"
+
+displayUsageAndExit() {
+	echo "dot -- dotfiles management"
+	echo ""
+	echo "Usage: dot [options]"
+	echo ""
+	echo "Options:"
+	echo "  -e, --edit    Open dotfiles directory for editing"
+	echo "  -h, --help    Show this help message and exit"
+	exit
+}
+
+while test $# -gt 0; do
+	case "$1" in
+		"-h"|"--help")
+			displayUsageAndExit
+			;;
+		"-e"|"--edit")
+			exec "$EDITOR" "$dotfilesDirectory"
+			exit
+			;;
+		*)
+			echo "Invalid option: $1"
+			displayUsageAndExit
+			;;
+	esac
+	shift
+done
+
+export DOTFILES_HOME=$HOME/.dotfiles
+
+# Set macOS defaults
+$DOTFILES_HOME/macos/set-defaults.sh
+
+# Install homebrew
+$DOTFILES_HOME/homebrew/install.sh 2>&1
 
 # Upgrade homebrew
+echo "› brew update"
 brew update
 
-# Install homebrew packages
-$ZSH/homebrew/install.sh 2>&1
+# Install software
+echo "› $DOTFILES_HOME/script/install"
+$DOTFILES_HOME/script/install
