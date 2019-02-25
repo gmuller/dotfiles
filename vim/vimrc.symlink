@@ -13,4 +13,6 @@ Plug 'tidalcycles/vim-tidal'
 call plug#end()
 
 set linebreak
+set ignorecase
+set smartcase
 command DS put=strftime(\"%Y%m%d %T\")
