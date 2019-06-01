@@ -41,7 +41,7 @@ done
 export DOTFILES_HOME=$HOME/.dotfiles
 
 # Set macOS defaults
-$DOTFILES_HOME/macos/set-defaults.sh
+#$DOTFILES_HOME/macos/set-defaults.sh
 
 # Install homebrew
 $DOTFILES_HOME/homebrew/install.sh 2>&1
