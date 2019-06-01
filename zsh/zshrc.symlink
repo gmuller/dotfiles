@@ -59,4 +59,6 @@ fi
 # Set Prompt
 autoload -Uz promptinit
 promptinit
-prompt walters
+prompt pure
+
+source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
