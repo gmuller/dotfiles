@@ -22,4 +22,6 @@ call plug#end()
 set linebreak
 set ignorecase
 set smartcase
+set tabstop=8 softtabstop=0 expandtab shiftwidth=4 smarttab
 command DS put=strftime(\"%Y%m%d %T\")
+
