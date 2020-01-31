@@ -14,6 +14,7 @@ Plug 'tpope/vim-sensible'
 Plug 'junegunn/goyo.vim'
 Plug 'junegunn/limelight.vim'
 Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
 Plug 'tidalcycles/vim-tidal'
 
 " List ends here. Plugins become visible to Vim after this call.
