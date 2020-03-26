@@ -16,6 +16,10 @@ Plug 'junegunn/limelight.vim'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'tidalcycles/vim-tidal'
+Plug 'vimwiki/vimwiki'
+Plug 'junegunn/fzf'
+Plug 'junegunn/fzf.vim'
+Plug 'michal-h21/vim-zettel'
 
 " List ends here. Plugins become visible to Vim after this call.
 call plug#end()
@@ -24,5 +28,13 @@ set linebreak
 set ignorecase
 set smartcase
 set tabstop=8 softtabstop=0 expandtab shiftwidth=4 smarttab
+set nocompatible
+filetype plugin on 
+syntax on
+
+let g:vimwiki_list = [{'path':'~/scratchbox/vimwiki/markdown/','ext':'.md','syntax':'markdown'}, {"path":"~/scratchbox/vimwiki/wiki/"}]
+
+let g:zettel_format = "%Y%m%d%H%M-%title"
+
 command DS put=strftime(\"%Y%m%d %T\")
 
