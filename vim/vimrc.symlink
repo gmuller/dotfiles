@@ -20,6 +20,7 @@ Plug 'vimwiki/vimwiki'
 Plug 'junegunn/fzf'
 Plug 'junegunn/fzf.vim'
 Plug 'michal-h21/vim-zettel'
+Plug 'https://github.com/alok/notational-fzf-vim'
 
 " List ends here. Plugins become visible to Vim after this call.
 call plug#end()
@@ -35,6 +36,8 @@ syntax on
 let g:vimwiki_list = [{'path':'~/scratchbox/vimwiki/markdown/','ext':'.md','syntax':'markdown'}, {"path":"~/scratchbox/vimwiki/wiki/"}]
 
 let g:zettel_format = "%Y%m%d%H%M-%title"
+
+let g:nv_search_paths = ['~/Tresors/Notes']
 
 command DS put=strftime(\"%Y%m%d %T\")
 
