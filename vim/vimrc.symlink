@@ -33,11 +33,11 @@ set nocompatible
 filetype plugin on 
 syntax on
 
-let g:vimwiki_list = [{'path':'~/scratchbox/vimwiki/markdown/','ext':'.md','syntax':'markdown'}, {"path":"~/scratchbox/vimwiki/wiki/"}]
+let g:vimwiki_list = [{'path':'~/Tresors/Notes/','ext':'.md'}, {"path":"~/Tresors/Wiki/"}]
 
 let g:zettel_format = "%Y%m%d%H%M-%title"
 
-let g:nv_search_paths = ['~/Tresors/Notes']
+let g:nv_search_paths = ['~/Tresors/Notes','~Tresors/Wiki']
 
 command DS put=strftime(\"%Y%m%d %T\")
 
