@@ -30,14 +30,16 @@ set ignorecase
 set smartcase
 set tabstop=8 softtabstop=0 expandtab shiftwidth=4 smarttab
 set nocompatible
+set splitbelow
+set splitright
 filetype plugin on 
 syntax on
 
-let g:vimwiki_list = [{'path':'~/Tresors/Notes/','ext':'.md'}, {"path":"~/Tresors/Wiki/"}]
+let g:vimwiki_list = [{'path':'~/Tresors/Notes/','ext':'.md','syntax':'markdown'}]
 
-let g:zettel_format = "%Y%m%d%H%M-%title"
+let g:zettel_format = "%Y%m%d%H%M"
 
-let g:nv_search_paths = ['~/Tresors/Notes','~Tresors/Wiki']
+let g:nv_search_paths = ['~/Tresors/Notes']
 
 command DS put=strftime(\"%Y%m%d %T\")
 
