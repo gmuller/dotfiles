@@ -37,24 +37,25 @@ filetype plugin on
 syntax on
 
 let g:vimwiki_list = [
-            \ {'path':'~/Tresors/Notes/',
-            \ 'ext':'.md',
-            \ 'syntax':'markdown',
-            \ 'custom_wiki2html': 'vimwiki_markdown',
-            \ 'html_filename_parameterization': 1,
-            \ 'template_path': '~/code/grantmuller/html/templates/',
+    \ {'path':'~/Tresors/Notes/wiki',
+            \ 'path_html': '~/Tresors/Notes/html',
+            \ 'template_path': '~/code/grantmuller/html/templates',
             \ 'template_default': 'default',
             \ 'css_name': 'css/main.css',
-            \ 'template_ext': '.tpl'},
+            \ 'template_ext': '.tpl',
+            \ 'auto_tags': 1,
+            \ 'auto_export': 1,
+            \ 'auto_toc': 1,
+            \ 'ext': '.md'},
     \ {'path':'~/code/grantmuller/wiki', 
-    \ 'auto_export': 1, 
-    \ 'auto_toc': 1, 
-    \ 'css_name': 'css/main.css', 
-    \ 'auto_tags': 1,
-    \ 'path_html': '~/code/grantmuller/html',
-    \ 'template_path': '~/code/grantmuller/html/templates/',
-    \ 'template_default': 'default',
-    \ 'template_ext': '.tpl'}]
+            \ 'auto_export': 1, 
+            \ 'auto_toc': 1, 
+            \ 'css_name': 'css/main.css', 
+            \ 'auto_tags': 1,
+            \ 'path_html': '~/code/grantmuller/html',
+            \ 'template_path': '~/code/grantmuller/html/templates/',
+            \ 'template_default': 'default',
+            \ 'template_ext': '.tpl'}]
 
 let g:vimwiki_global_ext = 0
 
