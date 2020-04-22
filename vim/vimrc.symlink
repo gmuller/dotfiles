@@ -61,11 +61,9 @@ let g:vimwiki_global_ext = 0
 
 nmap <Leader>wq <Plug>VimwikiVSplitLink
 
-let g:vimwiki_ext2syntax = {'.wiki': 'media'}
-
 let g:zettel_format = "%Y%m%d%H%M"
 
-let g:nv_search_paths = ['~/Tresors/Notes']
+let g:nv_search_paths = ['~/Tresors/Notes/wiki', '~/code/grantmuller/wiki']
 
 command DS put=strftime(\"%Y%m%d %T\")
 
