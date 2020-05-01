@@ -26,6 +26,7 @@ Plug 'https://github.com/alok/notational-fzf-vim'
 " List ends here. Plugins become visible to Vim after this call.
 call plug#end()
 
+set wrap
 set linebreak
 set ignorecase
 set smartcase
@@ -33,6 +34,7 @@ set tabstop=8 softtabstop=0 expandtab shiftwidth=4 smarttab
 set nocompatible
 set splitbelow
 set splitright
+au BufRead,BufNewFile *.md setlocal textwidth=80
 filetype plugin on 
 syntax on
 
@@ -43,9 +45,9 @@ let g:vimwiki_list = [
             \ 'template_default': 'default',
             \ 'css_name': 'css/main.css',
             \ 'template_ext': '.tpl',
-            \ 'auto_tags': 1,
-            \ 'auto_export': 1,
             \ 'auto_toc': 1,
+            \ 'syntax': 'markdown',
+            \ 'maxhi': 1,
             \ 'ext': '.md'},
     \ {'path':'~/code/grantmuller/wiki', 
             \ 'auto_export': 1, 
@@ -58,6 +60,8 @@ let g:vimwiki_list = [
             \ 'template_ext': '.tpl'}]
 
 let g:vimwiki_global_ext = 0
+let g:vimwiki_use_mouse = 1
+let g:vimwiki_auto_chdir = 1
 
 nmap <Leader>wq <Plug>VimwikiVSplitLink
 
