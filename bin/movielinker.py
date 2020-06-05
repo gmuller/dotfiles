@@ -17,10 +17,39 @@ config.read(os.path.join(home, '.movielinker'))
 username = config['movielinker']['username']
 password = config['movielinker']['password']
 api_key = config['movielinker']['api_key']
-seen_list_id = config['movielinker']['seen_list_id']
 
 tmdb.API_KEY = api_key
-a = tmdb.Lists(seen_list_id)
+
+auth = tmdb.Authentication()
+response = auth.token_new()
+
+kwargs = {
+    'request_token': auth.request_token,
+    'username': username,
+    'password': password,
+}
+auth = tmdb.Authentication()
+response = auth.token_validate_with_login(**kwargs)
+
+kwargs = {'request_token': auth.request_token}
+auth = tmdb.Authentication()
+response = auth.session_new(**kwargs)
+session_id = response['session_id']
+
+account = tmdb.Account(session_id)
+response = account.info()
+response = account.lists()
+
+print("\nWhich list contains the movies you have already seen?\n")
+index = 0
+movie_lists = []
+for l in response['results']:
+    print(index, l['name'])
+    movie_lists.append({'id': l['id'], 'name': l['name']})
+    index += 1
+list_index = int(input())
+list_id = movie_lists[list_index]['id']
+a = tmdb.Lists(list_id)
 
 movie_id = args.movie_id
 
