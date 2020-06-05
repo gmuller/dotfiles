@@ -28,10 +28,16 @@ if args.movie_name != None:
 
 movie = tmdb.Movies(movie_id)
 
+collaboratorList = []
+index = 0
 for c in movie.credits()['cast']:
-    print(c['id'], c['name'])
+    collaboratorList.append({'id': c['id'], 'name': c['name']})
+    print(index, c['name'])
+    index+=1
 
-excluded_collaborator = input("\nExclude a Collaborator?\n")
+excluded_collaborator_index = int(input("\nExclude a Collaborator?\n"))
+excluded_collaborator = collaboratorList[excluded_collaborator_index]
+print("Excluding", excluded_collaborator['name'])
 
 response = movie.info()
 list_response = a.info()
@@ -40,6 +46,7 @@ seen = set()
 
 cache = {}
 for c in movie.credits()['cast']:
+    if c['id'] == excluded_collaborator['id']: continue
     person = tmdb.People(c['id'])
     response = person.info
     for p in person.movie_credits()['cast']:
