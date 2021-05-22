@@ -1,0 +1,13 @@
+font:
+  normal:
+    # Font family
+    # family: "JetBrains Mono"
+    style: Regular
+
+  # Point size
+  size: 14.0
+
+window:
+  padding:
+    x: 4
+    y: 1
