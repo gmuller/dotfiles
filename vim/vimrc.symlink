@@ -22,6 +22,7 @@ Plug 'junegunn/fzf.vim'
 Plug 'michal-h21/vim-zettel'
 Plug 'mattn/calendar-vim'
 Plug 'https://github.com/alok/notational-fzf-vim'
+Plug 'rust-lang/rust.vim'
 
 " List ends here. Plugins become visible to Vim after this call.
 call plug#end()
